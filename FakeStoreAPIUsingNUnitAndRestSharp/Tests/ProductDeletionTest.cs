@@ -62,6 +62,7 @@ namespace FakeStoreAPIUsingNUnitAndRestSharp.Tests
 
 
             // Step 5: Verify product no longer exists
+
             // In a real API, we’d expect 404 Not Found — FakeStoreAPI returns 200 OK but same static list
             if (getDeletedProductResponse.StatusCode == HttpStatusCode.NotFound)
             {
