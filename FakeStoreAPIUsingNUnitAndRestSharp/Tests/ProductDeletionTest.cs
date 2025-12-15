@@ -23,8 +23,7 @@ namespace FakeStoreAPIUsingNUnitAndRestSharp.Tests
         }
 
         /// <summary>
-        /// User Story 3:
-        /// 
+        /// User Story 3: 
         /// As a store admin, I want to delete the product with the lowest rating from the store.
         /// Acceptance Criteria:
         /// 1. The product must be selected based on the lowest customer rating.
