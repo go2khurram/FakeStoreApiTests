@@ -39,7 +39,7 @@ steps:
   displayName: 'Run NUnit Tests'
   inputs:
     command: 'test'
-    projects: '**/*Tests.csproj'
+    projects: '**/*.csproj'
     arguments: '--configuration $(buildConfiguration) --logger "trx;LogFileName=test_results.trx"'
     publishTestResults: true
 
