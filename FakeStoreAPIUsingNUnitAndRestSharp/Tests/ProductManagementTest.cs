@@ -1,7 +1,6 @@
 ﻿using FakeStoreAPIUsingNUnitAndRestSharp.Clients;
 using FakeStoreAPIUsingNUnitAndRestSharp.Models;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Bson;
 using System.Net;
 
 namespace FakeStoreAPIUsingNUnitAndRestSharp.Tests

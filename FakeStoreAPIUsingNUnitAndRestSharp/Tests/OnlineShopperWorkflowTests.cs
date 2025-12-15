@@ -1,7 +1,5 @@
 ﻿using FakeStoreAPIUsingNUnitAndRestSharp.Clients;
 using FakeStoreAPIUsingNUnitAndRestSharp.Models;
-using RestSharp;
-using System.Diagnostics;
 
 namespace FakeStoreAPIUsingNUnitAndRestSharp.Tests
 {
