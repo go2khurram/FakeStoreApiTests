@@ -1,0 +1,17 @@
+﻿# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+# Build outputs
+bin/
+obj/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Others
+*.DS_Store
