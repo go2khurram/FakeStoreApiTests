@@ -1,5 +1,5 @@
 trigger:
-- main  # or 'master' if that's your default branch
+- main  
 
 pool:
   vmImage: 'windows-latest'
@@ -9,7 +9,7 @@ variables:
 
 steps:
 # Step 1: Checkout code
-- task: Checkout@1
+- checkout: self
   displayName: 'Checkout source code'
 
 # Step 2: Setup .NET SDK
@@ -17,7 +17,7 @@ steps:
   displayName: 'Install .NET SDK'
   inputs:
     packageType: 'sdk'
-    version: '8.x' # Change to your .NET version (like 6.x or 7.x if needed)
+    version: '8.x'  # adjust to your .NET version, e.g., 6.x or 7.x
 
 # Step 3: Restore dependencies
 - task: DotNetCoreCLI@2
@@ -41,7 +41,6 @@ steps:
     command: 'test'
     projects: '**/*.csproj'
     arguments: '--configuration $(buildConfiguration) --logger "trx;LogFileName=test_results.trx"'
-    publishTestResults: true
 
 # Step 6: Publish test results
 - task: PublishTestResults@2
