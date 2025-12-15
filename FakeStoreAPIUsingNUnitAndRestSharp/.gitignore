@@ -1,4 +1,10 @@
-﻿# Visual Studio
+﻿# Ignore Visual Studio temporary files, build results, and folders
+.vs/
+bin/
+obj/
+
+
+# Visual Studio
 .vs/
 *.user
 *.suo
